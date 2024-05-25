@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Funcional</title>
+    <link rel="stylesheet" href="hojadeestilos.css">
+</head>
+<body>
+    <header>
+        <h1>Claramente Esta es una Pagina Totalmente Funcional</h1>
+    </header>
+    <main>
+        <section id="seccion-formulario">
+            <h2>Formulario de Contacto</h2>
+            Porfavor escribe tus datos rellenando este formulario
+            <form id="contactoFormulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="correo">Email:</label>
+                <input type="email" id="correo" name="correo" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="mensajeFormulario"></div>
+        </section>
+        <section id="seccion-lista">
+            <h2>Lista Interactiva</h2>
+            Una lista que te permite eliminar y agregar nuevos elementos, dale un vistazo
+            <ul id="listaElementos">
+                <li>Hola soy un elemento no me elimines :( <button class="eliminarBtn">Eliminar</button></li>
+                <li>Hola soy otro elemento eliminame :D <button class="eliminarBtn">Eliminar</button></li>
+            </ul>
+            <input type="text" id="nuevoElemento" placeholder="Nuevo Elemento">
+            <button id="agregarElementoBtn">Añadir</button>
+        </section>
+    </main>
+    <footer>
+        <p> Valeria Michelle Rodriguez 240459</p>
+    </footer>
+    <script src="javita.js"></script>
+</body>
+</html>
